@@ -20,6 +20,6 @@ jobs:
     - name: Add to Asana
       uses: insurify/github-asana-action@v1.0.1
       with:
-        asana-pat: ${{ secrets.ASANA_TOKEN }}
+        asana-pat: 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
         task-comment: '* Pull Request: '
         trigger-phrase: "\\*\\*Asana Task:\\*\\*"
