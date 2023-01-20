@@ -1,7 +1,6 @@
 on:
   pull_request:
     types: [opened, reopened]
-
 jobs:
   create-asana-attachment-job:
     runs-on: ubuntu-latest
