@@ -1,5 +1,4 @@
 name: Pull Request
-
 on:
   pull_request:
     types: [ opened ]
@@ -20,6 +19,6 @@ jobs:
     - name: Add to Asana
       uses: insurify/github-asana-action@v1.0.1
       with:
-        asana-pat: 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
+        asana-pat: ${{ secrets.ASANA_TOKEN }}
         task-comment: '* Pull Request: '
         trigger-phrase: "\\*\\*Asana Task:\\*\\*"
